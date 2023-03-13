@@ -4,9 +4,8 @@ let minus = document.getElementById("minus");
 
 const add = (function () {
   let counter = 0;
-  return function (a) {
-    console.log(a)
-    a == "plus" ? counter += 1 : counter -= 1
+  return function (operation) {
+    operation == "plus" ? counter += 1 : counter -= 1;
     return counter;
   };
 })();
